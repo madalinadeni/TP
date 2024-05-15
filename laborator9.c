@@ -131,6 +131,14 @@ void afiseazaLista(Nod *cap) {
     printf("\n");
 }
 
+void elibereazaLista(Nod **cap) {
+    while (*cap != NULL) {
+        Nod *temp = *cap;
+        *cap = (*cap)->urm;
+        free(temp);
+    }
+}
+
 int main() {
     FILE* f = fopen("numere.txt", "r");
     if (f == NULL) {
@@ -152,6 +160,12 @@ int main() {
 
     fclose(f);
 
+    printf("Lista cu numere pare: ");
+    afiseazaLista(listaPare);
+
+    printf("Lista cu numere impare: ");
+    afiseazaLista(listaImpare);
+
     if (listaPare == NULL) {
         listaPare = listaImpare;
     } else {
@@ -162,17 +176,14 @@ int main() {
         temp->urm = listaImpare;
     }
 
-    printf("Lista cu numere pare: ");
+    printf("Lista combinata: ");
     afiseazaLista(listaPare);
 
-    while (listaPare != NULL) {
-        Nod *temp = listaPare;
-        listaPare = listaPare->urm;
-        free(temp);
-    }
+    elibereazaLista(&listaPare);
 
     return 0;
-}*/
+}
+*/
 
 
 /* Aplicația 9.3: Se considera o lista liniara simplu inlantuita care memoreaza valori intregi. Sa se scrie o functie care 
