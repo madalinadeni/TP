@@ -69,7 +69,7 @@ void afiseazaLista(Nod *cap) {
 }
 
 int main() {
-    FILE *f = fopen("date.in", "r");
+    FILE *f = fopen("date.in.txt", "r");
     if (f == NULL) {
         printf("Eroare la deschiderea fisierului");
         exit(EXIT_FAILURE);
