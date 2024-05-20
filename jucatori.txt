@@ -1,0 +1,14 @@
+12
+3
+Andrei 90
+Alex 85
+Maria 80
+Daniel 75
+Cristina 70
+Andreea 65
+Mihai 60
+Cristian 55
+Daniela 50
+Oliver 45
+Rares 40
+Cristi 35
