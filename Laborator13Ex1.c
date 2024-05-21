@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include "hs_utils.h"
+/* 1. Implementati biblioteca descrisa succint sub numele de hs_utils (fisierele hs_utils.c si 
+hs_utils.h) adaugând și alte funcții precum estePar, esteImpar, esteNegativ, estePozitiv. Testati 
+biblioteca hs_utils */
 
 int main() {
     int numere[] = { -9, 1, 2, 3, -8, 10 };
